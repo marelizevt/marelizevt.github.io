@@ -87,6 +87,38 @@
     <div class="page-content">
       <div class="container">
         <main>
+          {% if projects %}
+            <section>
+              <h2 class="section-heading">Projects</h2>
+              {% for project in projects %}
+                <section>
+                  <h3>
+                    {% if project.url %}
+                      <a href="{{ project.url }}">{{ project.title }}</a>
+                    {% else %}
+                      {{ project.title }}
+                    {% endif %}
+                  </h3>
+                    {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                    {% if project.highlights %}
+                    <ul>
+                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                    {% endif %}
+                    <h4>
+                      {% if project.url_git %}
+                        <a href="{{ project.url_git }}">Git Repository</a>
+                      {% endif %}
+                    </h4>
+                    <h4>
+                      {% if project.url_dashboard %}
+                        <a href="{{ project.url_dashboard }}">Dashboard</a>
+                      {% endif %}
+                    </h4>
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
           {% if work_experience %}
             <section>
               <h2 class="section-heading">Work Experience</h2>
@@ -105,30 +137,9 @@
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
                   {% if job.highlights %}
                     <ul>
-                      {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
-          {% if projects %}
-            <section>
-              <h2 class="section-heading">Projects</h2>
-              {% for project in projects %}
-                <section>
-                  <h3>
-                    {% if project.url %}
-                      <a href="{{ project.url }}">{{ project.title }}</a>
-                    {% else %}
-                      {{ project.title }}
-                    {% endif %}
-                  </h3>
-                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                  {% if project.highlights %}
-                    <ul>
-                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                      {% for highlight in job.highlights %}
+                        <li>{{ highlight }}</li>
+                      {% endfor %}
                     </ul>
                   {% endif %}
                 </section>
@@ -139,6 +150,53 @@
 
         <!-- Sidebar Section -->
         <aside>
+          {% if general_skills %}
+            <section>
+              <h2 class="section-heading">General Skills</h2>
+              <ul class="unstyled-list">
+                {% for gskill in general_skills %}
+                    <h3>{{ gskill.name }}</h3>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+          {% if skills %}
+            <section>
+              <h2 class="section-heading">Technical Skills</h2>
+              <ul class="unstyled-list">
+                {% for skill in skills %}
+                    <h3>{{ skill.name }}</h3>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+          {% if Certification %}
+            <section>
+              <h2 class="section-heading">Licenses and Certifications</h2>
+              <ul class="unstyled-list"></ul>
+                {% for certificate in Certification %}
+                <li>
+                    {% if certificate.url %}
+                      <a href="{{ certificate.url }}">{{ certificate.course_name }}</a> by {{ certificate.company}}
+                    {% else %}
+                      {{ certificate.course_name }} by  {{ certificate.company}}
+                    {% endif %}
+                  {% endfor %}
+                </li>
+              </ul>
+            <section>
+          {% endif %}  
+          {% if education %}
+            <section>
+              <h2 class="section-heading">Education</h2>
+              <ul class="unstyled-list">
+                {% for edu in education %}
+                    <h3>{{ edu.degrees }}</h3>
+                    <h3>{{ edu.institution }}</h3>
+                {% endfor %}
+              </ul>  
+            </section>  
+          {% endif %}  
           {% if languages %}
             <section>
               <h2 class="section-heading">Languages</h2>
@@ -150,32 +208,6 @@
                   </li>
                 {% endfor %}
               </ul>
-            </section>
-          {% endif %}
-
-          {% if volunteer_experience %}
-            <section>
-              <h2 class="section-heading">Volunteer Experience</h2>
-              {% for vol in volunteer_experience %}
-                <section>
-                  <h3>
-                    {% if vol.url %}
-                      {{ vol.position }} at <a href="{{ vol.url }}">{{ vol.organization }}</a>
-                    {% else %}
-                      {{ vol.position }} at {{ vol.organization }}
-                    {% endif %}
-                  </h3>
-                  {% if vol.start_date and vol.end_date %}
-                    <p class="section-label">{{ vol.start_date }} - {{ vol.end_date }}</p>
-                  {% endif %}
-                  {% if vol.summary %}<p>{{ vol.summary }}</p>{% endif %}
-                  {% if vol.highlights %}
-                    <ul>
-                      {% for highlight in vol.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
             </section>
           {% endif %}
         </aside>

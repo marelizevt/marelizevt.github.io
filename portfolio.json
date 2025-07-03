@@ -1,138 +1,135 @@
 {
-  "name": "Your Name",
-  "label": "Optional Label",
-  "image_path": "img/default-image.png",
+  "name": "Marelize Riëtte van Tonder",
+  "label": "Data Analyst",
   "contact": {
-    "email": "FirstLast@Sample.com",
-    "phone": "123-456-7890",
-    "location": "City, State, Country"
+    "email": "marelizevantonder1@gmail.com",
+    "phone": "061 415 1215",
+    "location": "Kempton-Park, Gauteng, South Africa"
   },
-  "summary": "A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.",
+  "summary": "I have a deep love for mathematics that naturally led me to pursue data science as a field of study. With a degree in Mathematics, I have a strong analytical foundation and a passion for solving complex problems through data. I have technical proficiency in tools such as Python, SQL, and data visualization platforms like Power BI. I am curious, detail-oriented, and thrive in collaborative environments where data is central to decision-making.",
   "base_url": "127.0.0.1:5500",
   "social_links": [
     {
-      "label": "Personal Website",
-      "url": "https://sample.com",
-      "svg_path": "img/globe.svg"
-    },
-    {
-      "label": "First Social",
-      "url": "https://sample.com",
+      "label": "Linkedin",
+      "url": "https://www.linkedin.com/in/marelize-van-tonder-b6132b36/",
       "svg_path": "img/linkedin.svg"
-    },
-    {
-      "label": "Second Social",
-      "url": "https://sample.com",
-      "svg_path": "img/github.svg"
     }
   ],
   "work_experience": [
     {
-      "company": "Latest Job",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present job and what the position entails",
+      "company": "Hoërskool Oos Moot",
+      "position": "Teaching Assistant",
+      "start_date": "01/01/2011",
+      "end_date": "28/02/2013",
+      "summary": "Help to get things ready for classes, assist teachers with preperations and marking.",
       "highlights": [
-        "First Duty of Current Job",
-        "Second Duty of Current Job",
-        "Third Duty of Current Job"
-      ]
-    },
-    {
-      "company": "Previous Job",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous job and what that position entailed",
-      "highlights": [
-        "First Duty of Previous Job",
-        "Second Duty of Previous Job",
-        "Third Duty of Previous Job"
+        "Give mathematics and science classes to grade 12 learners as well as afterschool classes",
+        "Manage the school merit system."
       ]
     }
   ],
+  "Certification": [
+    {
+      "company": "DataCamp",
+      "course_name": "Data Analyst in Power BI",
+      "date": "JUN 2025",
+      "url": "https://www.datacamp.com/statement-of-accomplishment/track/49c8df3681182859f02f00de07d1ac2335a81558?raw=1",
+      "highlights": [
+        "Microsoft Power BI, Data Visualization, Data Modeling, Data Transformation"
+      ]
+    },
+    {
+      "company": "DataCamp",
+      "course_name": "SQL Fundamentals",
+      "date": "AUG 2023",
+      "url": "https://www.datacamp.com/statement-of-accomplishment/track/ce61d53969bded3856b4ee09b6ee6e29ce6f2423?raw=1",
+      "highlights": [
+      "SQL, PostgreSQL, Database Design"
+      ]
+    },
+    {
+      "company": "DataCamp",
+      "course_name": "Data Scientist in Python",
+      "date": "JUL 2023",
+      "url": "https://www.datacamp.com/statement-of-accomplishment/track/91e8045f13bb2df1e2eb966fa36d1fec356d8e1e?raw=1",
+      "highlights": [
+      "Python (Programming Language), Data Cleaning, Exploratory Data Analysis, SQL, Hypothesis Testing, Git, Data Manipulation, Seaborn, Matplotlib, Pandas, Problem Solving"
+      ]
+    },
+    {
+      "company": "DataCamp",
+      "course_name": "Associate Data Analyst in SQL",
+      "date": "JUN 2023",
+      "url": "https://www.datacamp.com/statement-of-accomplishment/track/5fc1e8f35e13e767758b6c2cbb90777c15591d9a?raw=1",
+      "highlights": [
+      "SQL, Data Visualization, PostgreSQL, Problem Solving"
+      ]
+    },
+    {
+      "company": "DataCamp",
+      "course_name": "Data Analyst in Python",
+      "date": "JUN 2023",
+      "url": "https://www.datacamp.com/statement-of-accomplishment/track/cf145f0339089e92aa2f445d59584e937d057d91?raw=1",
+      "highlights": [
+      "Python (Programming Language), Seaborn, Pandas, Problem Solving"
+      ]
+    },
+    {
+      "company": "DataCamp",
+      "course_name": "Associate Data Scientist in Python",
+      "date": "APR 2023",
+      "url": "https://www.datacamp.com/statement-of-accomplishment/track/f91bea13e5dcd5e8ba1e4264c242d2f4bdc4aea2?raw=1",
+      "highlights": [
+      "Python (Programming Language), Seaborn, Pandas, Scikit-Learn, Matplotib, Problem Solving"
+      ]
+    }
+  ],
+  
   "projects": [
     {
-      "title": "My First Project",
-      "summary": "Short summary about my first project",
-      "url": "https://sample.com",
+      "title": "Pizza Sales Analysis",
+      "summary": "The goal of this analysis is to uncover business insights and understand customer preferences based on historical pizza sales data. By examining patterns and trends within the dataset, we aim to inform future decision-making in areas such as inventory planning, menu optimization, and marketing strategies.",
+      "url_git": "https://github.com/marelizevt/Pizza-Sales-Analysis",
+      "url_dashboard": "https://app.powerbi.com/view?r=eyJrIjoiYzE2Mzg1NGMtZWFhZS00YzAxLTkyMzEtYjRmYzk0MjJlZjc2IiwidCI6ImNhOWE4YjhjLTNlYTMtNDc5OS1hNDNlLTU1MTAzOThlN2EzYiIsImMiOjh9",
       "highlights": [
-        "First Highlight of Project One",
-        "Second Highlight of Project One",
-        "Third Highlight of Project One"
+        "The overview dashboard shows the KPI's of the business as well as a emphasis on the best and worst permorming months and times.",
+        "The performance dashboard shows the 5 best and worst performing pizzas by revenue, quantity and total orders."
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=1",
-          "caption": "Image Caption 1"
+          "img_path": "img/Dashboard Overview.jpg",
+          "caption": "Overview"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=2",
-          "caption": "Image Caption 2"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=3",
-          "caption": "Image Caption 3"
+          "img_path": "img/Dashboard Performance.jpg",
+          "caption": "Performance"
         }
       ]
     },
     {
-      "title": "My Second Project",
-      "summary": "Short summary about my second project",
-      "url": "https://sample.com",
+      "title": "",
+      "summary": "",
+      "url_git": "",
+      "url_dashboard": "",
       "highlights": [
-        "First Highlight of Project Two",
-        "Second Highlight of Project Two",
-        "Third Highlight of Project Two"
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=4",
-          "caption": "Image Caption 4"
+          "img_path": "",
+          "caption": ""
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=5",
-          "caption": "Image Caption 5"
+          "img_path": "",
+          "caption": ""
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=6",
-          "caption": "Image Caption 6"
+          "img_path": "",
+          "caption": ""
         }
       ]
     }
   ],
-  "volunteer_experience": [
-    {
-      "organization": "Latest Organization",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present volunteer work",
-      "highlights": [
-        "First Duty of Current Organization",
-        "Second Duty of Current Organization",
-        "Third Duty of Current Organization"
-      ]
-    },
-    {
-      "organization": "Previous Organization",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous volunteer work",
-      "highlights": [
-        "First Duty of Previous Organization",
-        "Second Duty of Previous Organization",
-        "Third Duty of Previous Organization"
-      ]
-    }
-  ],
-  "education": [
+  "certification": [
     {
       "institution": "Institution One",
       "location": "Institution One Location",
@@ -145,56 +142,80 @@
       "gpa_cumulative": "3.5",
       "gpa_major": "4.0",
       "graduation_date": "01/01/2005"
-    },
+    }
+  ],
+
+  "education": [
     {
-      "institution": "Institution Two",
-      "location": "Institution Two Location",
-      "url": "https://sample.com",
-      "degrees": ["Bachelor of Science in Physics"],
-      "honors": ["Scholarship Recipient"],
-      "gpa_cumulative": "3.2",
-      "gpa_major": "3.9",
-      "graduation_date": "01/01/2000"
+      "institution": "University of South Africa",
+      "location": "",
+      "url": "",
+      "degrees": "BSc in Mathematics and Chemistry",
+      "graduation_date": "2018"
     }
   ],
   "skills": [
     {
-      "name": "My First Skill",
-      "proficiency": 100,
-      "proficiency_label": "Proficiency Level"
+      "name": "SQL",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
     },
     {
-      "name": "My Second Skill",
-      "proficiency": 80,
-      "proficiency_label": "Proficiency Level"
+      "name": "Python",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "Power BI",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
     }
+  ],
+    "general_skills": [
+      {
+        "name": "Problem Solving"
+      },
+      {
+        "name": "Database Design"
+      },
+      {
+        "name": "Data Cleaning"
+      },
+      {
+        "name": "Data Transformation"
+      },
+      {
+        "name": "Data Modeling"
+      },
+      {
+        "name": "Data Manipulation"
+      },
+      {
+        "name": "Data Visualization"
+      }
   ],
   "interests": [
     {
-      "name": "My First Hobby",
-      "summary": "Short summary about my first Hobby",
+      "name": "Indoor plants",
+      "summary": "I enjoy caring for indoor plants and creating calming, natural spaces in the home. This passion led me to start my own home business selling plants and plant accessories.",
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=7",
-          "caption": "Image Caption 7"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=8",
-          "caption": "Image Caption 8"
+          "img_path": "img/Monstera Mint.jpg",
+          "caption": "Monstera Mint"
         }
       ]
     },
     {
-      "name": "My Second Hobby",
-      "summary": "Short summary about my second hobby",
+      "name": "Nature Photography",
+      "summary": "One of my favorite hobbies is nature photography, especially macro photography, which opens up a hidden world of intricate details and beauty often missed by the naked eye.",
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=9",
-          "caption": "Image Caption 9"
+          "img_path": "img/Hobbies - Photography.jpg",
+          "caption": "Common African Wattle Lapwing"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=10",
-          "caption": "Image Caption 10"
+          "img_path": "img/Hobbies - Photography1.jpg",
+          "caption": "Netted Sylph"
         }
       ]
     }
@@ -202,23 +223,11 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Proficient"
     },
     {
-      "language": "American Sign Language",
-      "fluency": "Professional Working Proficiency"
-    }
-  ],
-  "references": [
-    {
-      "name": "Person One",
-      "relation": "Previous Boss",
-      "reference": "Some nice things that Person One said about you, your work ethic, and how you provided value to their team."
-    },
-    {
-      "name": "Person Two",
-      "relation": "Previous Coworker",
-      "reference": "More kind things that Person Two said about you, what it was like working with you, and things you've accomplished."
+      "language": "Afrikaans",
+      "fluency": "Native Speaker"
     }
   ]
 }

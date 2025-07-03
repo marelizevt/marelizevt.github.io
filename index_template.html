@@ -109,6 +109,83 @@
     <div class="page-content">
       <div class="container">
         <main>
+
+          {% if projects %}
+            <section>
+              <h2 class="section-heading">Projects</h2>
+              {% for project in projects %}
+                <section>
+                  <h3>
+                  {% if project.title %}
+                    {{ project.title }}
+                  {% endif %}
+                  </h3>
+                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                  {% if project.highlights %}
+                    <ul>
+                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                  <h4>
+                    {% if project.url_git %}
+                      <a href="{{ project.url_git }}">Git Repository</a>
+                    {% endif %}
+                  </h4>
+                  <h4>
+                    {% if project.url_dashboard %}
+                      <a href="{{ project.url_dashboard }}">Dashboard</a>
+                    {% endif %}
+                  </h4>
+                  {% if project.images %}
+                    <div class="gallery main-gallery">
+                      {% for img in project.images %}
+                        <figure>
+                          <img width="600"
+                               height="338"
+                               src="{{ img.img_path }}"
+                               alt="{{ img.caption }}">
+                          <figcaption>{{ img.caption }}</figcaption>
+                        </figure>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
+          {% if Certification %}
+            <section>
+              <h2 class="section-heading">Licenses and Certifications</h2>
+              {% for certificate in Certification %}
+                <section>
+                  <h3>
+                    {% if certificate.url %}
+                    <a href="{{ certificate.url }}">{{ certificate.course_name }}</a>
+                    {% else %}
+                      {{ certificate.course_name }}
+                    {% endif %}
+                  </h3>
+                  <h4>
+                    {% if certificate.company %}
+                    {{ certificate.company }}
+                    {% endif %}
+                  </h4>
+                  {% if certificate.date %}
+                    <p class="section-label">{{ certificate.date }}</p>
+                  {% endif %}
+                  {% if certificate.highlights %}
+                  <p><b>Skills</b><br>
+                    {% for highlight in certificate.highlights %}
+                      {{ highlight }}<br>
+                    {% endfor %}
+                  </p>
+                {% endif %}
+                </section>
+              {% endfor %}
+            </section>
+          {% endif %}
+
           {% if work_experience %}
             <section>
               <h2 class="section-heading">Work Experience</h2>
@@ -129,42 +206,6 @@
                     <ul>
                       {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
                     </ul>
-                  {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-          {% endif %}
-
-          {% if projects %}
-            <section>
-              <h2 class="section-heading">Projects</h2>
-              {% for project in projects %}
-                <section>
-                  <h3>
-                    {% if project.url %}
-                      <a href="{{ project.url }}">{{ project.title }}</a>
-                    {% else %}
-                      {{ project.title }}
-                    {% endif %}
-                  </h3>
-                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                  {% if project.highlights %}
-                    <ul>
-                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                  {% if project.images %}
-                    <div class="gallery main-gallery">
-                      {% for img in project.images %}
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="{{ img.img_path }}"
-                               alt="{{ img.caption }}">
-                          <figcaption>{{ img.caption }}</figcaption>
-                        </figure>
-                      {% endfor %}
-                    </div>
                   {% endif %}
                 </section>
               {% endfor %}
@@ -231,10 +272,9 @@
                   </h3>
                   {% if edu.location %}<p class="section-label">{{ edu.location }}</p>{% endif %}
                   {% if edu.degrees %}
-                    <h4>Degrees</h4>
-                    <ul>
-                      {% for deg in edu.degrees %}<li>{{ deg }}</li>{% endfor %}
-                    </ul>
+                    <h3>
+                      {% for deg in edu.degrees %}{{ deg }}{% endfor %}
+                    </h3>
                   {% endif %}
                   {% if edu.honors %}
                     <h4>Honors</h4>
@@ -256,7 +296,7 @@
 
           {% if skills %}
             <section>
-              <h2 class="section-heading">Skills</h2>
+              <h2 class="section-heading">Technical Skills</h2>
               <ul class="unstyled-list">
                 {% for skill in skills %}
                   <li>
