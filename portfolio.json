@@ -84,7 +84,7 @@
       ]
     }
   ],
-  
+
   "projects": [
     {
       "title": "Pizza Sales Analysis",
@@ -103,28 +103,6 @@
         {
           "img_path": "img/Dashboard Performance.jpg",
           "caption": "Performance"
-        }
-      ]
-    },
-    {
-      "title": "",
-      "summary": "",
-      "url_git": "",
-      "url_dashboard": "",
-      "highlights": [
-      ],
-      "images": [
-        {
-          "img_path": "",
-          "caption": ""
-        },
-        {
-          "img_path": "",
-          "caption": ""
-        },
-        {
-          "img_path": "",
-          "caption": ""
         }
       ]
     }
