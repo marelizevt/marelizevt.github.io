@@ -293,9 +293,19 @@
               {% endfor %}
             </section>
           {% endif %}
-
+          {% if general_skills %}
+            <section>
+              <h2 class="section-heading">General Skills</h2>
+              <ul class="unstyled-list">
+                {% for gskill in general_skills %}
+                    <h3>{{ gskill.name }}</h3>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
           {% if skills %}
             <section>
+              
               <h2 class="section-heading">Technical Skills</h2>
               <ul class="unstyled-list">
                 {% for skill in skills %}
