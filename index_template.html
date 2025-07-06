@@ -166,19 +166,20 @@
                       {{ certificate.course_name }}
                     {% endif %}
                   </h3>
-                  <h4>
-                    {% if certificate.company %}
-                    {{ certificate.company }}
+                  <p>
+                    <h4>
+                      {% if certificate.company %}
+                      {{ certificate.company }}
+                      {% endif %}
+                    </h4>
+                    {% if certificate.date %}
+                      <p class="section-label">{{ certificate.date }}</p>
                     {% endif %}
-                  </h4>
-                  {% if certificate.date %}
-                    <p class="section-label">{{ certificate.date }}</p>
-                  {% endif %}
-                  {% if certificate.highlights %}
-                  <p><b>Skills</b><br>
-                    {% for highlight in certificate.highlights %}
-                      {{ highlight }}<br>
-                    {% endfor %}
+                    {% if certificate.highlights %}
+                    <b>Skills</b><br>
+                      {% for highlight in certificate.highlights %}
+                        {{ highlight }}<br>
+                      {% endfor %}
                   </p>
                 {% endif %}
                 </section>
