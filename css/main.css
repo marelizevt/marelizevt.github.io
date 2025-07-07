@@ -81,6 +81,10 @@ a:hover {
 
 address {
   font-style: normal;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
 }
 
 figure,
@@ -166,6 +170,8 @@ section {
 
 .header-info ul {
   margin: 1rem 0;
+  text-align: center;
+  width: 100%;
 }
 
 .link-with-icon {
@@ -274,6 +280,11 @@ aside li {
 .inline-list {
   list-style: none;
   gap: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* this is key */
+  padding: 0;
+  margin: 0.5rem 0;
 }
 
 .inline-list li {
@@ -421,7 +432,8 @@ blockquote {
   .flex-responsive {
     flex-direction: row;
     align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 
   .page-content .container {
