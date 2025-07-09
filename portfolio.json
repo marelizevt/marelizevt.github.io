@@ -166,6 +166,11 @@
       "name": "Power BI",
       "proficiency": 75,
       "proficiency_label": "Intermediate"
+    },
+    {
+      "name": "Excel",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
     }
   ],
     "general_skills": [
